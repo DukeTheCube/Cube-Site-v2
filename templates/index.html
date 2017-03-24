@@ -7,27 +7,42 @@
             </div>
             <div class="scanline"></div>
         </div>
-        <div id="maintitle" class="title">The Cube <img id="logo_mask" src="/static/images/logo_mask_small.png"></div>
-        <div id="subtitle" class="title">Duke's Entrepreneurship SLG</div>
+        <!--
+        <div class="row-fluid">
+            <div id="maintitle" class="title">The Cube <img id="logo_mask" src="/static/images/logo_mask_small.png"></div>
+            <div id="subtitle" class="title">Duke's Entrepreneurship SLG</div>
+        </div>
         <div class="row" id="cubeRow">
             <div id="mycube"></div>
         </div>
-        {% include 'rubiks_cube.html' %}
-        <div class="row mycontent">
-            <div class="col-md-4 resource">
-                <h1 class="resourcetitle"><i class="fa fa-handshake-o fa-3x" aria-hidden="true"></i><br>Mentorship</h1>
-                <p>The Cube has an extensive <a href="/alum">alumni</a> network that have advised undergraduate Cube members in building their own companies.</p>
+        {% include 'rubiks_cube.html' %}-->
+        <div id="transcroller-body" class="aos-all">
+            <!--<div class="row mycontent">
+                <div class="col-md-4 resource">-->
+            <div class="aos-item" data-aos="fade-up">
+                <div class="aos-item__inner">
+                    <h3 class="resourcetitle"><i class="fa fa-handshake-o fa-3x" aria-hidden="true"></i><br>Mentorship</h3>
+                    The Cube has an extensive <a href="/alum">alumni</a> network that have advised undergraduate Cube members in building their own companies.
+                </div>
             </div>
-            <div class="col-md-4 resource">
-                <h1 class="resourcetitle"><i class="fa fa-cog fa-3x" aria-hidden="true"></i><br>Resources</h1>
-                <p>Duke holds a startup challenges and has the Melissa & Dough Entrepreneurship program, both of which a number of Cube members have participated in.</p>
+            <!--<div class="col-md-4 resource">-->
+            <div class="aos-item" data-aos="fade-down">
+                <div class="aos-item__inner">
+                    <h3 class="resourcetitle"><i class="fa fa-cog fa-3x" aria-hidden="true"></i><br>Resources</h3>
+                    Duke holds a startup challenges and has the Melissa & Dough Entrepreneurship program, both of which a number of Cube members have participated in.
+                </div>
             </div>
-            <div class="col-md-4 resource">
-                <h1 class="resourcetitle"><i class="fa fa-users fa-3x" aria-hidden="true"></i><br>Entrepreneur Community</h1>
-                <p>We are a community of economists, business developers, engineers, computer scientists, and more. We support each other whether that be through technical help for a new startup idea or simply advice on how to approach implementation.</p>
+        </div>
+        <!--<div class="col-md-4 resource">-->
+        <div class="aos-item" data-aos="zoom-out-down">
+            <div class="aos-item__inner">
+                <h3 class="resourcetitle"><i class="fa fa-users fa-3x" aria-hidden="true"></i><br>Entrepreneur Community</h3>
+                We are a community of economists, business developers, engineers, computer scientists, and more. We support each other whether that be through technical help for a new startup idea or simply advice on how to approach implementation.
             </div>
         </div>
     </div>
+</div>
+</div>
 </div>
 {% endblock %} {% block scripts %}
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>

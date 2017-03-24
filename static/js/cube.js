@@ -21,6 +21,7 @@ function render(speed) {
 };
 
 $(".title").hide();
+$("#logo_mask").hide();
 $(".content").hide();
 
 /*
@@ -47,6 +48,7 @@ function titleIn() {
     $(".title").addClass("animated flipInX");
     $(".title").show();
     $("#logo_mask").addClass("animated zoomIn");
+    $("#logo_mask").show();
 }
 
 function appendParticles() {

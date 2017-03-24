@@ -3,6 +3,10 @@ $(document).ready(function() {
     triggerAnimation();
     //localStorage.removeItem("first_time");
     var firstTime = localStorage.getItem("first_time");
+    AOS.init({
+        easing: 'ease-in-out-sine'
+    });
+    /*
     if (!firstTime) {
         // first time loaded!
         localStorage.setItem("first_time", "1");
@@ -21,7 +25,7 @@ $(document).ready(function() {
         $("#mycube").remove();
         initialContent();
 
-    }
+    }*/
 
 });
 
