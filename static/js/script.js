@@ -1,25 +1,50 @@
 $(document).ready(function() {
 
     triggerAnimation();
+    localStorage.removeItem("first_time");
+    var firstTime = localStorage.getItem("first_time");
+    if (!firstTime) {
+        // first time loaded!
+        localStorage.setItem("first_time", "1");
 
-    render(0.001);
+        render(0.001);
 
-    setTimeout(function() {
+        setTimeout(function() {
 
-        $("#cube").fadeOut(1000, function() {
-            cancelAnimationFrame(cubeAnimationID);
-            titleIn();
-            //$("#cubeRow").remove();
-            appendParticles();
-            addContent();
-        });
+            $("#mycube").fadeOut(1000, function() {
+                cancelAnimationFrame(cubeAnimationID);
+                initialContent();
+            });
 
-    }, 1000)
+        }, 1000);
+    } else {
+        $("#mycube").remove();
+        initialContent();
+
+    }
 
 });
 
 function makeContentVisible() {
 
+}
+
+function rubiksCubeFunctionality() {
+    var scene = document.getElementById("scene");
+    document.ondragstart = function() {
+        return false;
+    }
+    window.addEventListener('load', assembleCube);
+    scene.addEventListener('mousedown', mousedown);
+}
+
+function initialContent() {
+    $("#scene").css("display", "block");
+    rubiksCubeFunctionality();
+    titleIn();
+    //$("#cubeRow").remove();
+    appendParticles();
+    addContent();
 }
 
 function triggerAnimation() {
