@@ -30,7 +30,7 @@
 .card img {
   float: left;
   width: auto;
-  height: 20%;
+  height: 20% !important;
   margin: 20px;
   position: relative;
   z-index: 1;

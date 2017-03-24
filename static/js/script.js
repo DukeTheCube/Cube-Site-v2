@@ -4,7 +4,15 @@ $(document).ready(function() {
     //localStorage.removeItem("first_time");
     var firstTime = localStorage.getItem("first_time");
     AOS.init({
-        easing: 'ease-in-out-sine'
+        easing: 'ease-out-back',
+        duration: 1000
+    });
+    hljs.initHighlightingOnLoad();
+
+    $('.hero__scroll').on('click', function(e) {
+        $('html, body').animate({
+            scrollTop: $(window).height()
+        }, 1200);
     });
     /*
     if (!firstTime) {
