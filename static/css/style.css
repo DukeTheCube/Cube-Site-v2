@@ -420,6 +420,16 @@ Animation keyframes
 #scene{
     display: none;
 }
+
+
+.text {
+  text-align: center;
+  font-family: Helvetica;
+  font-size: .8rem;
+  color: grey;
+  pointer-events: none;
+}
+
 .centered,
 .cube > .piece > .element > .sticker {
     position: absolute;
